@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Stos {
     private double[] tablica;
     private int pierwszy;
@@ -15,18 +17,18 @@ public class Stos {
         }
     }
 
-    public void Push(double zawartosc){
-        if(pierwszy == tablica.length){
-            tablica[pierwszy] = zawartosc;
-            pierwszy++;
-        }
+    public void push(double zawartosc){
+        tablica[pierwszy] = zawartosc;
+        pierwszy++;
+
     }
-    public double Pop(){
-        double zwraca = tablica[pierwszy];
+    public double pop(){
+        double zwraca = tablica[pierwszy-1];
         pierwszy--;
         return zwraca;
     }
-    public double Top(){
-        return tablica[pierwszy];
+    public double top(){
+        return tablica[pierwszy-1];
     }
+
 }

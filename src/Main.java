@@ -4,14 +4,15 @@ public class Main {
     public static void main(String[] args) {
         Stos stos = new Stos(10);
 
-        stos.Push(10);
-        stos.Push(11);
-        stos.Push(12);
-        stos.Push(13);
+        stos.push(10);
+        stos.push(11);
+        stos.push(12);
+        stos.push(13);
 
-        stos.Top();
-        stos.Pop();
-        stos.isEmpty();
+        System.out.println(stos.top());
+        System.out.println(stos.pop());
+        System.out.println(stos.isEmpty());
+       
     }
 
 }
